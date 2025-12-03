@@ -163,15 +163,13 @@ Survival Ratio
 
 3️⃣ LLM สร้างผลลัพธ์ในรูปแบบ JSON
 
-ประกอบด้วย:
-
 {
   "left_panel": "...",
   "middle_panel": "...",
   "right_panel": "..."
 }
 
-4️⃣ Backend/Frontend เรียก 👇
+4️⃣ Backend/Frontend เรียกได้เรยย 👇
 
 from nic_analyzer import generate_dashboard_data
 
