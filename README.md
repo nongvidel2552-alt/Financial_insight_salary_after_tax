@@ -62,7 +62,7 @@ export TYPHOON_API_KEY="YOUR_KEY"
 ## 📥 Input
 
 
-| Key                | Meaning (TH)              |
+| Key                | Meaning               |
 |--------------------|---------------------------|
 | net_income_monthly | รายได้สุทธิ               |
 | needs_food         | ค่าอาหาร                  |
@@ -76,12 +76,12 @@ export TYPHOON_API_KEY="YOUR_KEY"
 
 📤 Example Usage (ใน playground.py ก็มีให้เล่นน)
 -------------------
+```python
 from nic_analyzer import generate_dashboard_data
 from pprint import pprint
-
 params = {
    
-    "net_income_monthly": 30000,
+   "net_income_monthly": 30000,
     "needs_food": 5000,
     "needs_housing": 7000,
     "needs_transport": 2000,
@@ -94,7 +94,7 @@ params = {
 result = generate_dashboard_data(params)
 
 pprint(result)
-
+```
 
 
 ## 🧾 Output Example
@@ -103,29 +103,27 @@ pprint(result)
 ผลลัพธ์จะมี 2 ส่วน:
 
 1. numbers → ตัวเลขทางการเงิน
- 
- {
-  "health_score": 36.0,
-  
-  "actual_needs_pct": 103.0,
-  
-  "actual_wants_pct": 20.0,
-  
-  "actual_savings_pct": -23.0,
+นี่คือผลลัพธ์ตัวอย่าง:
 
+```json
+{
+  "health_score": 36.0,
+  "actual_needs_pct": 103.0,
+  "actual_wants_pct": 20.0,
+  "actual_savings_pct": -23.0,
   "dsr_pct": 15.0,
-  
   "dsr_status": "Excellent",
-  
   "survival_ratio": 0.82,
-  
   "culprit_item": "housing",
-  
   "culprit_amount": 7000
 }
+```
+
 
 
 2. panels → ข้อความสรุป 3 ช่องจาก LLM
+
+```json
 {
   "left_panel": "ค่าใช้จ่ายจำเป็นอยู่ที่ 103% เกินเกณฑ์ 50% โดยหมวดที่อยู่อาศัยใช้ 7000 บาท เป็นส่วนที่สูงที่สุด",
 
@@ -133,6 +131,7 @@ pprint(result)
   
   "right_panel": "ลองลดค่าเช่าหรือหาที่อยู่อาศัยที่ประหยัดขึ้น เพื่อให้เริ่มมีเงินเหลือเก็บ"
 }
+```
 
 
 
