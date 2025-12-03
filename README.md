@@ -35,33 +35,6 @@ Financial_insight_salary_after_tax/
 
 ├── requirements.txt       
 
-----------------------------------------------------------------
-
-## 🔧 Installation
-
-### 1) (recommend) pre Virtual Environment
-   
-  python -m venv venv
-  
-venv\Scripts\activate      # Windows
-
-source venv/bin/activate   # Mac/Linux
-
-### 2) pip install -r requirements.txt
-   
-### 3) Set up Environment Variable (LLM)
-* Key ได้จากในเว็บ Typhoon เข้าแล้ว -> กด Try now -> มันจะเป็น Typhoon playground มุมขวาบนจะมี API key กดแล้วคักลอกมาเรยย
-
-เข้า Windows PowerShell:
-
-setx TYPHOON_API_KEY "YOUR_KEY"
-
-
-macOS / Linux:
-
-export TYPHOON_API_KEY="YOUR_KEY"
-* สามารถเช็คได้ว่า key โดนบันทึกจริงมั้ย โดยการปิด-เปิด window powershell แล้วพิม echo $Env:TYPHOON_API_KEY
-* มันจะขึ้นประมาณ sk-xxxxxxxxxxxxxxxxxxxxxxxx 
 
 ----------------------------------------------------------------
 
