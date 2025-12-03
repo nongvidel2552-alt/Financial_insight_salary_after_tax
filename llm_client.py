@@ -93,8 +93,8 @@ def call_typhoon(user_prompt: str) -> dict:
         temperature=0.7,
         max_tokens=2048,
         top_p=0.9,
-        # ถ้า lib เวอร์ชันนี้ไม่รองรับ repetition_penalty ก็ไม่ต้องใส่
-        # repetition_penalty=1.1,
+
+
     )
 
     content = response.choices[0].message.content

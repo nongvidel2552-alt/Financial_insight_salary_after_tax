@@ -197,7 +197,7 @@ class FinancialHealthAnalyzer:
 
 def generate_dashboard_data(params: Dict[str, float]) -> Dict[str, Any]:
     """
-    ฟังก์ชันหลักที่ให้ FS เรียกทีเดียวจบ
+    ฟังก์ชันหลักที่ให้ FS เรียก
 
     params: dict ที่ key ตรงกับ analyze_nic_data:
         - net_income_monthly
