@@ -16,6 +16,7 @@ right_panel → คำแนะนำ actionable
 
 -> อันนี้ข้อความแสดงตามตำแหน่งที่จะแสดงผลบน [Dashboard]
 
+
 ## 📁 Project Structure
 Financial_insight_salary_after_tax/
 
@@ -28,6 +29,8 @@ Financial_insight_salary_after_tax/
 ├── playground.py          # ตัวอย่างการใช้งาน เล่น ๆๆๆ
 
 ├── requirements.txt       
+
+
 
 ## 🔧 Installation
 
@@ -89,6 +92,8 @@ params = {
 
 result = generate_dashboard_data(params)
 pprint(result)
+
+
 
 ## 🧾 Output Example
 
